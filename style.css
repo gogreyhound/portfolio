@@ -158,7 +158,9 @@ a:active {
 /* Logo styles */
 .logo {
 	display: block;
+	/*
 	margin: 7% auto;
+	*/
 }
 .danza {
 	float: left;
