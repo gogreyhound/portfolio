@@ -1,0 +1,17 @@
+VocalCompAux
+
+Scarlet Comp ST
+ Threshhold , around -5
+ Ration , full bore
+ Input, + 1 hash
+ Output, 0
+ Attack, all the way left
+ Release, mid of .1 and .2
+ 
+Scarlet Reverb St
+ Size, Small 40%
+ Pre-Filter, Low 11%
+ Air, 85% Bright
+ Mix, Dry 35%
+
+Vol, -2.0

@@ -1,0 +1,92 @@
+<HTML>
+<head>
+<title>MattBowdenAudio - Audio Production & Sound Design</title>
+
+<!--Fancybox CSS-->
+	<link rel="stylesheet" href="css/fancybox/jquery.fancybox-buttons.css">
+	<link rel="stylesheet" href="css/fancybox/jquery.fancybox-thumbs.css">
+	<link rel="stylesheet" href="css/fancybox/jquery.fancybox.css">
+
+<!--CSS-->
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<style type="text/css">
+body {
+    overflow:auto;
+}
+</style>
+
+</head>
+
+<body>
+<div id="main">
+	<p align="center">
+	<img src="images/logos/newlogo.png" alt="MattBowdenAudio" height="30%" width="14%">
+	</p>
+
+	<p align="center"><strong>
+	<a class="various fancybox.iframe" href="https://mattbowdenaudio.wufoo.com/forms/contact/">Contact</a> | 
+	<a href="portfolio.html" target="_self">Portfolio</a> | 
+	<a class="various fancybox.iframe" href="about.htm">About</a> | 
+	<a href="downloads/resume.zip">Resume</a>
+	</p>	
+<BR>
+	<p align="center">
+	<img src="images/logos/current.png" alt="current projects" height="52px" width="250px">
+<BR>
+	
+
+
+<!-- ********************************************** -->
+<!-- JavaScript at the bottom for fast page loading -->
+<!-- ********************************************** -->
+	
+<!--jQuery Library-->
+	
+	<!-- FancyBox-->
+		<script src="scripts/fancybox/jquery.fancybox.js"></script>
+		<script src="scripts/fancybox/jquery.fancybox-buttons.js"></script>
+		<script src="scripts/fancybox/jquery.fancybox-thumbs.js"></script>
+		<script src="scripts/fancybox/jquery.easing-1.3.pack.js"></script>
+		<script src="scripts/fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
+	
+
+<!--Fancybox-->         
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".various").fancybox({
+			maxWidth	: 800,
+			maxHeight	: 600,
+			fitToView	: false,
+			width		: '70%',
+			height		: '70%',
+			autoSize	: false,
+			closeClick	: false,
+			openEffect	: 'elastic',
+			closeEffect	: 'none',
+			padding : 0,
+		});
+	});
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".various-text").fancybox({
+			maxWidth	: 800,
+			maxHeight	: 600,
+			fitToView	: false,
+			width		: 'auto',
+			height		: 'auto',
+			autoSize	: false,
+			closeClick	: false,
+			openEffect	: 'elastic',
+			closeEffect	: 'none',
+			padding : 0,
+		});
+	});
+</script>
+
+<!--End Fancybox-->
+
+</body>
+</html>

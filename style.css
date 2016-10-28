@@ -1,0 +1,262 @@
+/*
+	It's important not to add anything you don't want changed on mobile
+	outside of a media query. I've tried to organize things using a 
+	mobile first philosophy a la "The Goldilocks Approach". 
+
+	Because the media queries are at the bottom, they'll override any
+	conflicting rules set for mobile, and these same rules will be ignored
+	by mobile devices.
+*/
+
+
+
+/*commons*/
+html,
+body{
+
+	/* 
+		These set the context for other styles
+		Just leave em.
+	*/
+	height: 100%;
+	width: 100%;
+	/* 
+		These do the same, but you can customize to your liking
+		Just set all the values you want to inherit to the rest of
+		the doc here.
+	*/
+	background: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight:900;
+	font-style: strong;
+	color: #fff;
+	font-size: .85em;
+	margin: 0;
+	padding: 0;
+}
+
+/*link styles*/
+a{ 
+	color: #FFFFFF;
+	text-decoration: none;
+	}
+/* 
+	Remember that these pseudo-classes inherit from the a tag
+	so you can define common styles there and only define what's different
+	in the pseudo-class styles
+*/
+a:visited { 
+	font-style: normal;
+	}
+a:hover,
+a:active { 
+	color: #FFFFFF;
+	}
+
+#nav {
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+	background: #000; /* won't inherit */
+	margin: 0;
+	padding: 0 0 .5em 0;
+}
+
+#nav li{
+	list-style: none;
+	font-size: 1.25em;
+}
+
+.vidthumb{
+    position:relative; /* Necessary for play button */
+
+}
+/* 
+	I didn't mess with these an make them responsive yet.
+	A good start is to convert the px to em or percentage.
+	I got lazy.
+*/
+.vidthumb img {
+	height: 200px;
+	width: 333px;
+	display: block;
+	margin: 0 auto;
+}
+
+
+.vidthumb .play{
+    position:absolute;
+    width:50px;
+    height:50px;
+    border:3px solid #fff;
+    top:35%;
+    right:50%;
+    margin:-25px -30px 0 0;
+    border-radius:30px;
+    box-shadow:0 0 rgba(0,0,0,0);
+}
+
+.vidthumb .play span{
+    position:absolute;
+    width:0;
+    height:0;
+    border-top:12px solid transparent;
+    border-bottom:12px solid transparent;
+    border-left:20px solid #fff;
+    top:13px;
+    left:18px;
+}
+
+/*div styles*/
+#main{
+	background:url(images/bg/splashbg.jpg) 50% 70% no-repeat fixed;
+	height: 100%;
+	padding-top: 5%;
+}
+
+.billboard {
+	padding-bottom: 10%;
+	padding: 5% 0;
+	height: 35%;
+}
+
+/* 
+	I added this class to each of your divs that have *-content
+	in the ids. This avoids having to style the ids seperately
+	and repeating the same code.
+
+	This is a good example of what's called a "semantic" class
+	name, which means the name is meaningful and representative
+	of the type of element it is styling.
+
+	It's also object-oriented because it is reusable. Win.
+*/
+.content {
+	padding-bottom: 0%;
+	padding: 2% 0;
+	height: auto;
+	min-height: 65%;
+	background: url(images/bg/bg.jpg) no-repeat fixed; 
+}
+#second{
+	background: url(images/bg/danza_bg.jpg) 50% 0 no-repeat fixed;
+}
+
+#third{
+	background: url(images/bg/staystill_bg.jpg) 50% 0 no-repeat fixed;	
+}
+
+#fourth{
+	background: url(images/bg/btb_bg.jpg) 50% 0 no-repeat fixed;
+}
+
+#fifth{
+	background: url(images/bg/ironman_bg.jpg) 50% 0 no-repeat fixed;
+}
+
+
+/* Logo styles */
+.logo {
+	display: block;
+	margin: 7% auto;
+}
+.danza {
+	float: left;
+}
+.student {
+	margin-top: 3%;
+}
+
+#disclaimer {
+	position: relative;
+	width: 20em;
+	z-index: 20;
+	margin-top: .85em;
+	border: 2px solid white;
+	background: #222;
+	color: white;
+	padding: .5em 2em;
+}
+
+.notice {
+	width: 10em;
+	border: 2px solid white;
+	background: #111;
+	padding: 0 1em;
+}
+
+
+/* Tools */
+.centered {
+	text-align: center;
+}
+
+/* 
+	Media queries 
+	
+	Anything non-mobile should go in these. I would add at least one more
+	just to make things a little more refined.
+*/
+/* For screens at least 500px wide */
+@media (min-width: 500px) {
+	
+	/* Display a horizontal menu */
+	li {
+		display: inline;
+	}
+
+	/* Hacky stuff to get the menu to appear without the nav button */
+	/* Not perfect. Once you click on the nav button it stops working */
+
+	#navToggle {
+		visibility: hidden; /* Hide NAV button */
+	}
+	#choices {
+		display: block; 
+		text-align: center;
+		margin-top: -1em; /* Moves the menu up since the NAV li is still in doc flow */
+	}
+
+	#nav a {
+		padding-right: 3em;
+	}
+
+	.billboard {
+		height: 35%;
+		padding-bottom: 5%;
+	}
+
+
+	/* 
+		DISCLAIMER STUFF
+	*/
+
+	#disclaimer {
+		position: relative;
+		width: 30em;
+		z-index: 20;
+		margin-top: .85em;
+		border: 2px solid white;
+		background: #222;
+		color: white;
+		padding: .5em 2em;
+	}
+
+	/* move the logos a bit to correct formatting */
+	.danza {
+		margin: 0 0 0 10%;
+	}
+
+	.still {
+		margin: 0 10% 0 0 ;
+	}
+
+	/* 
+		Should probably tweak this to adjust the p
+		of the .vidthumb
+	*/
+
+	.vidthumb p {
+		padding: 0 4em;
+	}
+}
