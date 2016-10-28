@@ -163,9 +163,11 @@ a:active {
 .danza {
 	float: left;
 }
-
 .still {
 	float: right;
+}
+.btb {
+	float: center;
 }
 .student {
 	float: left;
