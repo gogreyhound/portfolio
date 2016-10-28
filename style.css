@@ -163,6 +163,13 @@ a:active {
 .danza {
 	float: left;
 }
+
+.still {
+	float: right;
+}
+.btb {
+	float: left;
+}
 .student {
 	margin-top: 3%;
 }
