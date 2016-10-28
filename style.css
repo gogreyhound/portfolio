@@ -240,7 +240,7 @@ a:active {
 	*/
 
 	#disclaimer {
-		position: relative;
+		position: 50%;
 		width: 30em;
 		z-index: 20;
 		margin-top: .85em;
