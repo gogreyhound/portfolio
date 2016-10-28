@@ -166,9 +166,6 @@ a:active {
 .still {
 	float: right;
 }
-.btb {
-	margin-bottom: 7%;
-}
 .student {
 	float: left;
 	margin-top: 3%;
@@ -229,10 +226,9 @@ a:active {
 	}
 
 	.billboard {
-		/* 
 		height: 35%;
 		padding-bottom: 5%;
-		*/
+	
 	}
 
 
