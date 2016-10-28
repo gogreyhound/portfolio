@@ -205,9 +205,9 @@ a:active {
 	Anything non-mobile should go in these. I would add at least one more
 	just to make things a little more refined.
 */
-/* For screens at least 500px wide */
+/* For screens at least 500px wide
 @media (min-width: 500px) {
-	
+*/
 	/* Display a horizontal menu */
 	li {
 		display: inline;
