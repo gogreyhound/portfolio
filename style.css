@@ -158,13 +158,10 @@ a:active {
 /* Logo styles */
 .logo {
 	display: block;
-	/*margin: 7% auto;*/
+	margin: 7% auto;
 }
 .danza {
 	float: left;
-}
-.still {
-	float: right;
 }
 .student {
 	margin-top: 3%;
@@ -199,9 +196,10 @@ a:active {
 	
 	Anything non-mobile should go in these. I would add at least one more
 	just to make things a little more refined.
+*/
 /* For screens at least 500px wide */
-
 @media (min-width: 500px) {
+	
 	/* Display a horizontal menu */
 	li {
 		display: inline;
@@ -226,7 +224,6 @@ a:active {
 	.billboard {
 		height: 35%;
 		padding-bottom: 5%;
-	
 	}
 
 
